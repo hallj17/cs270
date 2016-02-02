@@ -1,0 +1,84 @@
+<!-- Jennie Hall CS270 Assignment 1
+Description: Horizontal Navigation
+ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Navigation</title>
+
+<style>
+
+	ul {
+	 margin: 0;
+	 padding: 0;
+	 list-style: none;
+	 width: 150px;
+	 border-bottom: 1px solid #000;
+ }
+ 
+ 
+   ul li {
+ 	position: relative;
+ }
+ 
+ 
+  li ul {
+   position: absolute;
+   left: 149px;
+   top: 0;
+   display: none;
+ }
+ 
+ 
+ ul li a {
+   display: block;
+   text-decoration: none;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 14px;
+   color: #000;
+   background: #F0F0F0;
+   padding: 5px;
+   border: 1px solid #000;
+   border-bottom: 0;
+ }
+ 
+li:hover ul { display: block; }
+
+
+
+</style>
+</head>
+
+<body>
+
+<!-- Ul list -->
+
+<ul> 
+  <li><a href="#">Home</a></li> 
+  <li><a href="#">About</a> 
+  <!--add another ul into li tag -->
+      <ul> 
+      <li><a href="#">Staff</a></li> 
+      <li><a href="#">History</a></li> 
+      <li><a href="#">Press</a></li> 
+      </ul> 
+    </li> 
+    
+  <li><a href="#">Media</a> 
+  <!--add another ul into li tag -->
+      <ul> 
+      <li><a href="#">Audio</a></li>  
+      <li><a href="#">Video</a></li> 
+        </ul> 
+    </li>
+    
+    
+  <li><a href="#">Blog</a> </li> 
+  <li><a href="#">Contact</a></li>
+  </ul>
+
+</body>
+
+</html>
